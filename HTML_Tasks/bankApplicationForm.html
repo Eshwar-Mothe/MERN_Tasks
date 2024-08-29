@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- This is a bank application form Task -->
+    <h1>Job Application Form</h1>
+    <hr>
+    <p>
+        Thank you for your interest in working with us. Please check below for available job
+        opportunities that meet your criteria and send your application by filling out the Job Application Form.
+    </p>
+    <form action="https://httpbin.org/post" method="post" target="_blank">
+        <fieldset>
+            <label for="permit">Do you have permission to work in India</label>
+            <input type="radio" required name="permit" id="permit">Yes
+            <input type="radio" required name="permit" id="permit">No
+            <br><br>
+            <label for="fname">Full Name: </label>
+            <input required type="text" id="fname" placeholder="first Name">
+            <input required type="text" id="lname" placeholder="last name">
+
+            <br>
+            <br>
+
+            <label for="email">Email: </label>
+            <input required type="email" id="email" placeholder="john.doe@example.com">
+
+            <br><br>
+
+            <label for="mobile">Mobile: </label>
+            <input type="tel" id="mobile" placeholder="Contact Number">
+            <br>
+            <br>
+
+            <label for="dropdown">What position are you looking for?</label>
+            <select required name="-Select-" id="dropdown">
+                <optgroup>
+                    <option value="-Select-" selected>-Select-</option>
+                    <option value="MERN Stack Developer">MERN Stack Developer</option>
+                    <option value="Python Full Stack">Python Full Stack</option>
+                    <option value="Java Full Stack">Java Full Stack</option>
+                    <option value="MEAN Stack Developer">MEAN Stack Developer</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="BackEnd Development">BackEnd Development</option>
+                </optgroup>
+            </select>
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            &emsp;
+            <label for="date">Availabele Date: </label>
+            <input required type="date" id="date">
+
+            <br><br>
+
+            <label for="status">What is your Current employee Status?</label>
+            <br>
+            <input type="radio" required name="status" value="Employed">Employed &emsp;&emsp;&nbsp;
+            <input type="radio" required name="status" value="Self-Employed">Self-Employed
+            <br>
+            <input type="radio" required name="status" value="Unemployeed">Unemployeed &nbsp; &nbsp;
+            <input type="radio" required name="status" value="Student">Student
+
+            <br><br>
+
+            <label for="resume">Please provide your resume Link: </label>
+            <input required type="url" id="resume" placeholder="https://www.example.com/">
+            &emsp;&emsp;&emsp;&emsp;
+
+            <label for="resume_PDF">Please upload your Resume(PDF only): </label>
+            <input required type="file" accept=".pdf">
+
+            <br><br>
+
+            <label for="reference">Do you have reference? (Optional): </label>
+            <input type="text" id="fname" placeholder="First Name">
+            <input type="text" id="lname" placeholder="Last Name">
+
+            <br><br>
+
+            <label for="remail">Reference email: </label>
+            <input type="email" id="remail" placeholder="john.doe@example.com">
+
+            <br><br>
+
+            <input type="reset"> &emsp;
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
